@@ -5,6 +5,9 @@ import java.util.Random;
 public class SwampArea {
 	
 	 private int[][] swampArea;
+	 
+	 //created after submission
+	 private int exitPoint;
 	
 	public SwampArea(int i, int j) {
 		
@@ -21,10 +24,15 @@ public class SwampArea {
 		}
 	}
 	
-	public double getExitPointDistance(int num) {
+	//created after submission
+	public int getExitPoint() {
 		
 		Random rand = new Random();
-		int randVal = rand.nextInt(100);
+		
+		return this.exitPoint = rand.nextInt(100);
+	}
+	
+	public double getExitPointDistance(int num) {
 		
 //		if (randVal == 0) {
 //			this.getExitPointDistance(num);
@@ -36,7 +44,7 @@ public class SwampArea {
 			
 			for (int j = 0; j < this.swampArea[i].length; j++) {
 				
-				if (this.swampArea[i][j] == randVal) {
+				if (this.swampArea[i][j] == this.exitPoint) {
 					
 					for (int k = 0; k < this.swampArea.length; k++) {
 						
