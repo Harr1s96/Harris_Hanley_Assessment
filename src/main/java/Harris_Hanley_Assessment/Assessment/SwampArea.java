@@ -64,6 +64,9 @@ public class SwampArea {
 			
 		}
 		return distance;
+
+	}
+}
 	
 //		public double getNewDistance(int num) {
 //			
@@ -81,7 +84,6 @@ public class SwampArea {
 //			
 //			
 //		}
-	}
 	
 	
 	
@@ -96,5 +98,3 @@ public class SwampArea {
 //		return coords;
 //	}
 	
-
-}
