@@ -14,7 +14,7 @@ public class App
     	Player myPlayer = new Player();
     	Scanner scan = new Scanner(System.in);
     	
-    	while (true) {
+    	while (myPlayer.getPlayerStartingPoint() != playSpace.getExitPoint()) {
     		
     		System.out.println("The dial reads " + playSpace.getExitPointDistance(myPlayer.getPlayerStartingPoint()) + "m");
     		String input = scan.nextLine();
